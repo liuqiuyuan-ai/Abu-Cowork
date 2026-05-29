@@ -1,0 +1,310 @@
+{
+  "schema_version": "2.0",
+  "meta": {
+    "generated_at": "2026-05-26T07:53:54.993Z",
+    "slug": "trae-qms-management-expert",
+    "source_url": "https://github.com/Trae-AI/trae-skills/tree/main/skills/qms-management-expert",
+    "source_ref": "main",
+    "model": "claude",
+    "analysis_version": "3.0.0",
+    "source_type": "community",
+    "content_hash": "8f339225162abf723997e51f09ad779a278a79a4d628dfbb93c8d0af84788fe0",
+    "tree_hash": "58caa3ea58f7168aae0d58f5a7ef08f4aaa6a855c92b5461be294acd47754d0a"
+  },
+  "skill": {
+    "name": "qms-management-expert",
+    "description": "Senior QMS Management Expert for comprehensive quality management system design, implementation, documentation control, and continuous improvement. Provides ISO 13485 QMS implementation, document control system design, management review facilitation, design controls, risk management integration, and supplier quality management.",
+    "summary": "Senior QMS Management Expert for comprehensive quality management system design, implementation, documentation control, and continuous improvement.",
+    "icon": "📋",
+    "version": "1.0.0",
+    "author": "Trae AI",
+    "license": "MIT license",
+    "category": "quality-management",
+    "tags": [
+      "quality-management",
+      "QMS",
+      "ISO-13485",
+      "medical-devices",
+      "compliance",
+      "document-control",
+      "risk-management"
+    ],
+    "supported_tools": [
+      "claude",
+      "claude-code"
+    ],
+    "risk_factors": [
+      "filesystem"
+    ]
+  },
+  "security_audit": {
+    "risk_level": "safe",
+    "is_blocked": false,
+    "safe_to_publish": true,
+    "summary": "This is a legitimate QMS management toolkit containing templates and local Python scripts for quality management system analysis. No network access or credential handling.",
+    "risk_factor_evidence": [],
+    "critical_findings": [],
+    "high_findings": [],
+    "medium_findings": [],
+    "low_findings": [],
+    "dangerous_patterns": [],
+    "files_scanned": 12,
+    "total_lines": 6000,
+    "audit_model": "claude",
+    "audited_at": "2026-05-26T07:53:54.993Z"
+  },
+  "content": {
+    "user_title": "QMS Management Expert",
+    "value_statement": "Medical device companies need expert guidance for designing, implementing, and maintaining ISO 13485 quality management systems. This skill provides comprehensive tools for document control, risk management, and continuous improvement.",
+    "seo_keywords": [
+      "QMS management",
+      "ISO 13485 implementation",
+      "quality management system",
+      "document control",
+      "risk management",
+      "medical device compliance",
+      "Claude",
+      "Claude Code"
+    ],
+    "actual_capabilities": [
+      "Designs comprehensive ISO 13485 compliant QMS structures",
+      "Establishes document control systems for QMS documentation",
+      "Integrates risk management throughout product realization",
+      "Facilitates management review processes",
+      "Develops continuous improvement strategies",
+      "Manages supplier quality assurance processes",
+      "Creates performance dashboards for QMS metrics"
+    ],
+    "limitations": [
+      "Does not replace formal ISO 13485 certification body assessment",
+      "Cannot verify actual implementation of quality processes",
+      "Does not provide legal or regulatory compliance guarantees",
+      "Templates require customization for specific organizational needs"
+    ],
+    "use_cases": [
+      {
+        "target_user": "Quality managers",
+        "title": "QMS Implementation",
+        "description": "Establishing a new ISO 13485 compliant quality management system"
+      },
+      {
+        "target_user": "Quality engineers",
+        "title": "Document Control",
+        "description": "Setting up effective document control systems for QMS"
+      },
+      {
+        "target_user": "Management teams",
+        "title": "Management Review",
+        "description": "Preparing for and conducting management reviews"
+      },
+      {
+        "target_user": "Supplier quality teams",
+        "title": "Supplier Management",
+        "description": "Managing supplier quality assurance processes"
+      }
+    ],
+    "prompt_templates": [
+      {
+        "title": "QMS Design",
+        "scenario": "New QMS implementation",
+        "prompt": "Help me design a comprehensive ISO 13485 compliant quality management system for our medical device company"
+      },
+      {
+        "title": "Implementation Planning",
+        "scenario": "QMS roadmap development",
+        "prompt": "Help me develop an implementation roadmap for our ISO 13485 QMS"
+      },
+      {
+        "title": "Document Control",
+        "scenario": "Document management setup",
+        "prompt": "Help me establish an effective document control system for our QMS"
+      },
+      {
+        "title": "Management Review",
+        "scenario": "Review preparation",
+        "prompt": "Prepare agenda and materials for our upcoming management review meeting"
+      }
+    ],
+    "output_examples": [
+      {
+        "input": "What are the key components of an ISO 13485 QMS?",
+        "output": [
+          "ISO 13485 QMS includes: Quality Manual, 31 documented procedures, Medical Device Files, Risk Management processes, Design Controls, Document Control, Training systems, and Continuous Improvement mechanisms",
+          "Key processes: Management responsibility, resource management, product realization, and measurement/analysis/improvement",
+          "Documentation hierarchy: Quality Manual (Tier 1), Procedures (Tier 2), Work Instructions (Tier 3), Records (Tier 4)"
+        ]
+      },
+      {
+        "input": "How do I implement effective document control?",
+        "output": [
+          "Establish document numbering system and version control",
+          "Implement approval workflow for new documents",
+          "Control distribution to ensure only current versions are used",
+          "Maintain records of document changes and distribution",
+          "Establish retention periods for all QMS records"
+        ]
+      }
+    ],
+    "best_practices": [
+      "Obtain gap analysis from QMS Audit Expert before implementation",
+      "Involve all relevant departments in QMS design",
+      "Establish clear roles and responsibilities for QMS processes",
+      "Implement document control before creating extensive documentation",
+      "Plan regular internal audits and management reviews"
+    ],
+    "anti_patterns": [
+      "Creating documentation without considering actual workflow",
+      "Over-documenting processes to the point of impracticality",
+      "Neglecting training on QMS requirements",
+      "Failing to regularly review and update documentation",
+      "Not integrating risk management into daily operations"
+    ],
+    "faq": [
+      {
+        "question": "How long does QMS implementation take?",
+        "answer": "Typically 3-6 months for basic implementation, 6-12 months for full certification readiness depending on organizational size and complexity."
+      },
+      {
+        "question": "What is the documentation hierarchy?",
+        "answer": "Tier 1: Quality Manual (policy level), Tier 2: Procedures (what to do), Tier 3: Work Instructions (how to do it), Tier 4: Records (evidence)."
+      },
+      {
+        "question": "How often should management reviews be held?",
+        "answer": "ISO 13485 requires management reviews at least annually, but quarterly reviews are recommended for active improvement."
+      },
+      {
+        "question": "What is the role of risk management?",
+        "answer": "Risk management must be integrated throughout product realization, from design to post-market surveillance, following ISO 14971."
+      },
+      {
+        "question": "How do I manage supplier quality?",
+        "answer": "Establish supplier qualification criteria, conduct regular audits, monitor performance, and maintain supplier evaluation records."
+      },
+      {
+        "question": "Does this skill provide legal compliance advice?",
+        "answer": "No. This tool provides implementation guidance. Consult regulatory experts for legal compliance questions specific to your jurisdiction."
+      }
+    ]
+  },
+  "file_structure": [
+    {
+      "name": "assets",
+      "type": "dir",
+      "path": "assets",
+      "children": [
+        {
+          "name": "templates",
+          "type": "dir",
+          "path": "assets/templates",
+          "children": [
+            {
+              "name": "procedures",
+              "type": "dir",
+              "path": "assets/templates/procedures",
+              "children": [
+                {
+                  "name": "CAPA-procedure-template.md",
+                  "type": "file",
+                  "path": "assets/templates/procedures/CAPA-procedure-template.md",
+                  "lines": 100
+                },
+                {
+                  "name": "document-control-procedure-template.md",
+                  "type": "file",
+                  "path": "assets/templates/procedures/document-control-procedure-template.md",
+                  "lines": 80
+                }
+              ]
+            },
+            {
+              "name": "quality-manual-template.md",
+              "type": "file",
+              "path": "assets/templates/quality-manual-template.md",
+              "lines": 100
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "path": "assets/templates/README.md",
+              "lines": 20
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "assets/README.md",
+          "lines": 20
+        }
+      ]
+    },
+    {
+      "name": "references",
+      "type": "dir",
+      "path": "references",
+      "children": [
+        {
+          "name": "iso-13485-requirements.md",
+          "type": "file",
+          "path": "references/iso-13485-requirements.md",
+          "lines": 400
+        },
+        {
+          "name": "mandatory-documents.md",
+          "type": "file",
+          "path": "references/mandatory-documents.md",
+          "lines": 350
+        },
+        {
+          "name": "quality-manual-guide.md",
+          "type": "file",
+          "path": "references/quality-manual-guide.md",
+          "lines": 380
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "references/README.md",
+          "lines": 20
+        }
+      ]
+    },
+    {
+      "name": "scripts",
+      "type": "dir",
+      "path": "scripts",
+      "children": [
+        {
+          "name": "document-control-audit.py",
+          "type": "file",
+          "path": "scripts/document-control-audit.py",
+          "lines": 150
+        },
+        {
+          "name": "management-review-prep.py",
+          "type": "file",
+          "path": "scripts/management-review-prep.py",
+          "lines": 120
+        },
+        {
+          "name": "qms-performance-dashboard.py",
+          "type": "file",
+          "path": "scripts/qms-performance-dashboard.py",
+          "lines": 160
+        }
+      ]
+    },
+    {
+      "name": "SKILL.md",
+      "type": "file",
+      "path": "SKILL.md",
+      "lines": 450
+    },
+    {
+      "name": "skill-report.json",
+      "type": "file",
+      "path": "skill-report.json",
+      "lines": 330
+    }
+  ]
+}

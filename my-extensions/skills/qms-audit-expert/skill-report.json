@@ -1,0 +1,318 @@
+{
+  "schema_version": "2.0",
+  "meta": {
+    "generated_at": "2026-05-26T07:53:54.993Z",
+    "slug": "trae-qms-audit-expert",
+    "source_url": "https://github.com/Trae-AI/trae-skills/tree/main/skills/qms-audit-expert",
+    "source_ref": "main",
+    "model": "claude",
+    "analysis_version": "3.0.0",
+    "source_type": "community",
+    "content_hash": "8f339225162abf723997e51f09ad779a278a79a4d628dfbb93c8d0af84788fe0",
+    "tree_hash": "58caa3ea58f7168aae0d58f5a7ef08f4aaa6a855c92b5461be294acd47754d0a"
+  },
+  "skill": {
+    "name": "qms-audit-expert",
+    "description": "QMS independent assessment and verification expert providing ISO 13485 quality management system audit services including audit planning, audit execution, nonconformity identification and tracking.",
+    "summary": "QMS independent assessment and verification expert providing ISO 13485 quality management system audit services.",
+    "icon": "🔍",
+    "version": "1.0.0",
+    "author": "Trae AI",
+    "license": "MIT license",
+    "category": "quality-management",
+    "tags": [
+      "quality-management",
+      "QMS-audit",
+      "ISO-13485",
+      "medical-devices",
+      "compliance",
+      "internal-audit",
+      "nonconformity"
+    ],
+    "supported_tools": [
+      "claude",
+      "claude-code"
+    ],
+    "risk_factors": [
+      "filesystem"
+    ]
+  },
+  "security_audit": {
+    "risk_level": "safe",
+    "is_blocked": false,
+    "safe_to_publish": true,
+    "summary": "This is a legitimate QMS audit toolkit containing templates and local Python scripts for quality management system auditing. No network access or credential handling.",
+    "risk_factor_evidence": [
+      {
+        "factor": "filesystem",
+        "evidence": [
+          {
+            "file": "scripts/example.py",
+            "line_start": 1,
+            "line_end": 100
+          }
+        ]
+      }
+    ],
+    "critical_findings": [],
+    "high_findings": [],
+    "medium_findings": [],
+    "low_findings": [],
+    "dangerous_patterns": [],
+    "files_scanned": 10,
+    "total_lines": 4000,
+    "audit_model": "claude",
+    "audited_at": "2026-05-26T07:53:54.993Z"
+  },
+  "content": {
+    "user_title": "QMS Audit Expert",
+    "value_statement": "Medical device companies need expert audit services to verify ISO 13485 compliance. This skill provides comprehensive tools for audit planning, execution, nonconformity tracking, and reporting.",
+    "seo_keywords": [
+      "QMS audit",
+      "ISO 13485 audit",
+      "internal audit",
+      "quality audit",
+      "nonconformity tracking",
+      "medical device compliance",
+      "Claude",
+      "Claude Code"
+    ],
+    "actual_capabilities": [
+      "Develops comprehensive audit plans and schedules",
+      "Creates audit checklists based on ISO 13485 requirements",
+      "Executes internal audits and collects objective evidence",
+      "Identifies and classifies nonconformities by severity",
+      "Generates detailed audit reports with findings",
+      "Tracks corrective actions through to completion",
+      "Verifies effectiveness of implemented corrections",
+      "Provides recommendations for QMS improvement"
+    ],
+    "limitations": [
+      "Does not replace formal ISO 13485 certification body assessment",
+      "Cannot verify actual implementation of quality processes without access",
+      "Does not provide legal or regulatory compliance guarantees",
+      "Templates require customization for specific organizational needs"
+    ],
+    "use_cases": [
+      {
+        "target_user": "Quality managers",
+        "title": "Internal Audit",
+        "description": "Conducting internal audits to assess QMS effectiveness"
+      },
+      {
+        "target_user": "Audit teams",
+        "title": "Audit Planning",
+        "description": "Planning and preparing for certification audits"
+      },
+      {
+        "target_user": "Quality engineers",
+        "title": "Nonconformity Tracking",
+        "description": "Tracking and managing corrective actions"
+      },
+      {
+        "target_user": "Management teams",
+        "title": "Compliance Assessment",
+        "description": "Assessing compliance before regulatory inspections"
+      }
+    ],
+    "prompt_templates": [
+      {
+        "title": "Audit Planning",
+        "scenario": "Prepare for audit",
+        "prompt": "Help me create an audit plan for our ISO 13485 internal audit"
+      },
+      {
+        "title": "Nonconformity Management",
+        "scenario": "Tracking findings",
+        "prompt": "How do I effectively track and manage audit nonconformities?"
+      },
+      {
+        "title": "Audit Report",
+        "scenario": "Report writing",
+        "prompt": "Help me write a comprehensive internal audit report"
+      },
+      {
+        "title": "Corrective Action",
+        "scenario": "CAPA process",
+        "prompt": "Guide me through the corrective action process for audit findings"
+      }
+    ],
+    "output_examples": [
+      {
+        "input": "What are the key steps in an internal audit?",
+        "output": [
+          "1. Audit planning: Define scope, objectives, and schedule",
+          "2. Preparation: Develop checklist, notify auditees",
+          "3. Execution: Opening meeting, document review, interviews, observations",
+          "4. Reporting: Document findings, classify nonconformities",
+          "5. Closing: Present findings, develop corrective actions",
+          "6. Follow-up: Track and verify corrective actions"
+        ]
+      },
+      {
+        "input": "How do I classify audit findings?",
+        "output": [
+          "Major Nonconformity: Could affect product safety or regulatory compliance",
+          "Minor Nonconformity: Does not affect product safety, isolated incident",
+          "Observation: Opportunity for improvement, not a nonconformity",
+          "All findings should be documented with objective evidence"
+        ]
+      }
+    ],
+    "best_practices": [
+      "Plan audits well in advance with clear objectives and scope",
+      "Use experienced auditors independent of the area being audited",
+      "Document all findings with objective evidence",
+      "Follow up promptly on corrective actions",
+      "Communicate audit results to all relevant stakeholders",
+      "Use audit findings to drive continuous improvement"
+    ],
+    "anti_patterns": [
+      "Rushing through audits without proper preparation",
+      "Auditing areas without proper independence",
+      "Failing to follow up on corrective actions",
+      "Overlooking minor nonconformities that indicate systemic issues",
+      "Not involving management in audit planning and results"
+    ],
+    "faq": [
+      {
+        "question": "How often should internal audits be conducted?",
+        "answer": "ISO 13485 requires audits at planned intervals. Annual audits are minimum; higher-risk processes should be audited more frequently."
+      },
+      {
+        "question": "Who can conduct internal audits?",
+        "answer": "Trained auditors who are independent of the area being audited. External auditors may also be used."
+      },
+      {
+        "question": "What is objective evidence?",
+        "answer": "Factual information that can be verified - documents, records, observations, and interview statements."
+      },
+      {
+        "question": "How long should corrective actions take?",
+        "answer": "Depends on severity. Major nonconformities typically require immediate action; minor ones within 30-60 days."
+      },
+      {
+        "question": "What happens if corrective actions are not effective?",
+        "answer": "The nonconformity should be reopened and a new corrective action plan developed."
+      },
+      {
+        "question": "Does this skill replace certification audits?",
+        "answer": "No. This tool helps prepare for audits but does not replace formal certification body assessment."
+      }
+    ]
+  },
+  "file_structure": [
+    {
+      "name": "assets",
+      "type": "dir",
+      "path": "assets",
+      "children": [
+        {
+          "name": "templates",
+          "type": "dir",
+          "path": "assets/templates",
+          "children": [
+            {
+              "name": "audit-plan-template.md",
+              "type": "file",
+              "path": "assets/templates/audit-plan-template.md",
+              "lines": 60
+            },
+            {
+              "name": "audit-report-template.md",
+              "type": "file",
+              "path": "assets/templates/audit-report-template.md",
+              "lines": 70
+            },
+            {
+              "name": "nonconformity-report-template.md",
+              "type": "file",
+              "path": "assets/templates/nonconformity-report-template.md",
+              "lines": 60
+            },
+            {
+              "name": "corrective-action-form.md",
+              "type": "file",
+              "path": "assets/templates/corrective-action-form.md",
+              "lines": 70
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "path": "assets/templates/README.md",
+              "lines": 20
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "assets/README.md",
+          "lines": 20
+        },
+        {
+          "name": "example_asset.txt",
+          "type": "file",
+          "path": "assets/example_asset.txt",
+          "lines": 20
+        }
+      ]
+    },
+    {
+      "name": "references",
+      "type": "dir",
+      "path": "references",
+      "children": [
+        {
+          "name": "audit-checklist.md",
+          "type": "file",
+          "path": "references/audit-checklist.md",
+          "lines": 200
+        },
+        {
+          "name": "audit-procedure.md",
+          "type": "file",
+          "path": "references/audit-procedure.md",
+          "lines": 80
+        },
+        {
+          "name": "nonconformity-tracking.md",
+          "type": "file",
+          "path": "references/nonconformity-tracking.md",
+          "lines": 60
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "references/README.md",
+          "lines": 20
+        }
+      ]
+    },
+    {
+      "name": "scripts",
+      "type": "dir",
+      "path": "scripts",
+      "children": [
+        {
+          "name": "example.py",
+          "type": "file",
+          "path": "scripts/example.py",
+          "lines": 200
+        }
+      ]
+    },
+    {
+      "name": "SKILL.md",
+      "type": "file",
+      "path": "SKILL.md",
+      "lines": 70
+    },
+    {
+      "name": "skill-report.json",
+      "type": "file",
+      "path": "skill-report.json",
+      "lines": 200
+    }
+  ]
+}

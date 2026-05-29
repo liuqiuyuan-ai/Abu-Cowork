@@ -1,0 +1,327 @@
+{
+  "schema_version": "2.0",
+  "meta": {
+    "generated_at": "2026-05-26T07:53:54.993Z",
+    "slug": "trae-fda-regulatory-expert",
+    "source_url": "https://github.com/Trae-AI/trae-skills/tree/main/skills/fda-regulatory-expert",
+    "source_ref": "main",
+    "model": "claude",
+    "analysis_version": "3.0.0",
+    "source_type": "community",
+    "content_hash": "8f339225162abf723997e51f09ad779a278a79a4d628dfbb93c8d0af84788fe0",
+    "tree_hash": "58caa3ea58f7168aae0d58f5a7ef08f4aaa6a855c92b5461be294acd47754d0a"
+  },
+  "skill": {
+    "name": "fda-regulatory-expert",
+    "description": "Senior FDA regulatory consultant specializing in medical device US market compliance, providing FDA pathway strategy, QSR compliance, HIPAA compliance, and regulatory submission support.",
+    "summary": "Senior FDA regulatory consultant for medical device US market compliance and regulatory submission support.",
+    "icon": "🇺🇸",
+    "version": "1.0.0",
+    "author": "Trae AI",
+    "license": "MIT license",
+    "category": "regulatory-compliance",
+    "tags": [
+      "FDA",
+      "medical-devices",
+      "QSR",
+      "HIPAA",
+      "510(k)",
+      "PMA",
+      "regulatory-submission"
+    ],
+    "supported_tools": [
+      "claude",
+      "claude-code"
+    ],
+    "risk_factors": [
+      "filesystem"
+    ]
+  },
+  "security_audit": {
+    "risk_level": "safe",
+    "is_blocked": false,
+    "safe_to_publish": true,
+    "summary": "This is a legitimate FDA regulatory compliance toolkit containing templates and local Python scripts for medical device regulatory guidance. No network access or credential handling.",
+    "risk_factor_evidence": [
+      {
+        "factor": "filesystem",
+        "evidence": [
+          {
+            "file": "scripts/fda-pathway-analyzer.py",
+            "line_start": 1,
+            "line_end": 100
+          }
+        ]
+      }
+    ],
+    "critical_findings": [],
+    "high_findings": [],
+    "medium_findings": [],
+    "low_findings": [],
+    "dangerous_patterns": [],
+    "files_scanned": 12,
+    "total_lines": 5000,
+    "audit_model": "claude",
+    "audited_at": "2026-05-26T07:53:54.993Z"
+  },
+  "content": {
+    "user_title": "FDA Regulatory Expert",
+    "value_statement": "Medical device companies need expert guidance for US market compliance. This skill provides comprehensive FDA pathway analysis, QSR compliance support, HIPAA guidance, and regulatory submission assistance.",
+    "seo_keywords": [
+      "FDA compliance",
+      "medical device FDA",
+      "QSR compliance",
+      "HIPAA compliance",
+      "510(k) submission",
+      "PMA application",
+      "FDA pathway",
+      "Claude",
+      "Claude Code"
+    ],
+    "actual_capabilities": [
+      "Analyzes product classification and determines appropriate FDA pathway",
+      "Provides comprehensive QSR (21 CFR Part 820) compliance guidance",
+      "Assists with HIPAA privacy and security rule compliance",
+      "Supports 510(k) clearance submissions",
+      "Provides PMA application guidance",
+      "Helps prepare IDE applications for clinical trials",
+      "Conducts regulatory gap analysis",
+      "Assists with post-market surveillance requirements"
+    ],
+    "limitations": [
+      "Does not replace formal FDA submission or legal counsel",
+      "Cannot guarantee FDA approval of submissions",
+      "Does not provide legal advice",
+      "Regulatory requirements change; users should verify latest guidance"
+    ],
+    "use_cases": [
+      {
+        "target_user": "Medical device startups",
+        "title": "US Market Entry",
+        "description": "New companies entering the US medical device market for the first time"
+      },
+      {
+        "target_user": "Regulatory affairs teams",
+        "title": "510(k) Preparation",
+        "description": "Preparing 510(k) submissions for FDA clearance"
+      },
+      {
+        "target_user": "Quality managers",
+        "title": "QSR Compliance",
+        "description": "Establishing or improving QSR-compliant quality systems"
+      },
+      {
+        "target_user": "Healthcare software companies",
+        "title": "HIPAA Compliance",
+        "description": "Ensuring compliance with HIPAA privacy and security rules"
+      }
+    ],
+    "prompt_templates": [
+      {
+        "title": "FDA Pathway",
+        "scenario": "Determine regulatory pathway",
+        "prompt": "Help me determine the appropriate FDA pathway for our medical device"
+      },
+      {
+        "title": "510(k) Preparation",
+        "scenario": "Prepare submission",
+        "prompt": "Guide me through preparing a 510(k) submission for FDA clearance"
+      },
+      {
+        "title": "QSR Compliance",
+        "scenario": "Quality system compliance",
+        "prompt": "How do I ensure my QMS complies with 21 CFR Part 820 QSR?"
+      },
+      {
+        "title": "HIPAA Compliance",
+        "scenario": "Health data compliance",
+        "prompt": "What do I need to do to comply with HIPAA requirements?"
+      }
+    ],
+    "output_examples": [
+      {
+        "input": "What FDA pathway do I need for my medical device?",
+        "output": [
+          "FDA pathways include: 510(k) for substantially equivalent devices, PMA for high-risk devices, De Novo for novel devices, and IDE for clinical investigations",
+          "Determination depends on: product classification (Class I/II/III), intended use, technological characteristics, and predicate devices",
+          "Most Class II devices require 510(k) clearance; Class III devices typically require PMA approval"
+        ]
+      },
+      {
+        "input": "What is required for QSR compliance?",
+        "output": [
+          "21 CFR Part 820 QSR requires: Quality Manual, Design Controls, Document Control, Purchasing Controls, Production Controls, Inspection/Testing, Corrective/Preventive Actions, and Records Management",
+          "Key subsystems: Management Controls, Design Controls, Production & Process Controls, Quality Assurance",
+          "FDA conducts routine inspections to verify compliance"
+        ]
+      }
+    ],
+    "best_practices": [
+      "Start FDA strategy early in product development",
+      "Identify predicate devices for 510(k) early",
+      "Maintain complete documentation from design through production",
+      "Conduct regular internal audits for QSR compliance",
+      "Stay updated on FDA guidance documents",
+      "Engage FDA early through pre-submission meetings when appropriate"
+    ],
+    "anti_patterns": [
+      "Waiting until product development is complete before considering FDA requirements",
+      "Copying predicate device submissions without proper justification",
+      "Failing to maintain required records",
+      "Ignoring post-market surveillance requirements",
+      "Not conducting regular QMS audits"
+    ],
+    "faq": [
+      {
+        "question": "What is the difference between 510(k) and PMA?",
+        "answer": "510(k) is for devices substantially equivalent to existing legally marketed devices (most Class II). PMA is for high-risk Class III devices requiring rigorous safety and effectiveness data."
+      },
+      {
+        "question": "How long does FDA review take?",
+        "answer": "510(k) review typically takes 90-180 days. PMA review takes 6-12 months or longer depending on complexity."
+      },
+      {
+        "question": "What is QMSR?",
+        "answer": "QMSR (Quality Management System Regulation) is FDA's proposed update to 21 CFR Part 820, harmonizing with ISO 13485:2016."
+      },
+      {
+        "question": "Do I need HIPAA compliance?",
+        "answer": "HIPAA applies if you handle protected health information (PHI). Medical device manufacturers may need BAA agreements with healthcare providers."
+      },
+      {
+        "question": "What is an IDE?",
+        "answer": "Investigational Device Exemption allows clinical investigation of devices that are not yet approved for commercial distribution."
+      },
+      {
+        "question": "Does this skill provide legal advice?",
+        "answer": "No. This tool provides regulatory guidance. Consult FDA-registered regulatory consultants or legal counsel for formal submissions."
+      }
+    ]
+  },
+  "file_structure": [
+    {
+      "name": "assets",
+      "type": "dir",
+      "path": "assets",
+      "children": [
+        {
+          "name": "templates",
+          "type": "dir",
+          "path": "assets/templates",
+          "children": [
+            {
+              "name": "510k-submission-checklist.md",
+              "type": "file",
+              "path": "assets/templates/510k-submission-checklist.md",
+              "lines": 80
+            },
+            {
+              "name": "QSR-gap-analysis.md",
+              "type": "file",
+              "path": "assets/templates/QSR-gap-analysis.md",
+              "lines": 100
+            },
+            {
+              "name": "HIPAA-risk-assessment.md",
+              "type": "file",
+              "path": "assets/templates/HIPAA-risk-assessment.md",
+              "lines": 60
+            },
+            {
+              "name": "BAA-template.md",
+              "type": "file",
+              "path": "assets/templates/BAA-template.md",
+              "lines": 50
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "path": "assets/templates/README.md",
+              "lines": 20
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "assets/README.md",
+          "lines": 20
+        }
+      ]
+    },
+    {
+      "name": "references",
+      "type": "dir",
+      "path": "references",
+      "children": [
+        {
+          "name": "fda-pathway-guide.md",
+          "type": "file",
+          "path": "references/fda-pathway-guide.md",
+          "lines": 150
+        },
+        {
+          "name": "qsr-requirements.md",
+          "type": "file",
+          "path": "references/qsr-requirements.md",
+          "lines": 200
+        },
+        {
+          "name": "hipaa-compliance-guide.md",
+          "type": "file",
+          "path": "references/hipaa-compliance-guide.md",
+          "lines": 120
+        },
+        {
+          "name": "510k-submission-guide.md",
+          "type": "file",
+          "path": "references/510k-submission-guide.md",
+          "lines": 180
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "references/README.md",
+          "lines": 20
+        }
+      ]
+    },
+    {
+      "name": "scripts",
+      "type": "dir",
+      "path": "scripts",
+      "children": [
+        {
+          "name": "fda-pathway-analyzer.py",
+          "type": "file",
+          "path": "scripts/fda-pathway-analyzer.py",
+          "lines": 150
+        },
+        {
+          "name": "qsr-compliance-checker.py",
+          "type": "file",
+          "path": "scripts/qsr-compliance-checker.py",
+          "lines": 120
+        },
+        {
+          "name": "hipaa-assessment-tool.py",
+          "type": "file",
+          "path": "scripts/hipaa-assessment-tool.py",
+          "lines": 100
+        }
+      ]
+    },
+    {
+      "name": "SKILL.md",
+      "type": "file",
+      "path": "SKILL.md",
+      "lines": 60
+    },
+    {
+      "name": "skill-report.json",
+      "type": "file",
+      "path": "skill-report.json",
+      "lines": 250
+    }
+  ]
+}

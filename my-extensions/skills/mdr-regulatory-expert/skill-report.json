@@ -1,0 +1,364 @@
+{
+  "schema_version": "2.0",
+  "meta": {
+    "generated_at": "2026-05-26T07:53:54.993Z",
+    "slug": "trae-mdr-regulatory-expert",
+    "source_url": "https://github.com/Trae-AI/trae-skills/tree/main/skills/mdr-regulatory-expert",
+    "source_ref": "main",
+    "model": "claude",
+    "analysis_version": "3.0.0",
+    "source_type": "community",
+    "content_hash": "8f339225162abf723997e51f09ad779a278a79a4d628dfbb93c8d0af84788fe0",
+    "tree_hash": "58caa3ea58f7168aae0d58f5a7ef08f4aaa6a855c92b5461be294acd47754d0a"
+  },
+  "skill": {
+    "name": "mdr-regulatory-expert",
+    "description": "EU MDR 2017/745 regulatory expert providing comprehensive medical device EU market compliance services including MDR classification decisions, technical documentation guidance, clinical evidence requirements, and post-market surveillance implementation.",
+    "summary": "EU MDR 2017/745 regulatory expert for medical device EU market compliance.",
+    "icon": "🇪🇺",
+    "version": "1.0.0",
+    "author": "Trae AI",
+    "license": "MIT license",
+    "category": "regulatory-compliance",
+    "tags": [
+      "MDR",
+      "EU MDR 2017/745",
+      "medical-devices",
+      "EU compliance",
+      "technical-documentation",
+      "clinical-evidence",
+      "post-market-surveillance"
+    ],
+    "supported_tools": [
+      "claude",
+      "claude-code"
+    ],
+    "risk_factors": [
+      "filesystem"
+    ]
+  },
+  "security_audit": {
+    "risk_level": "safe",
+    "is_blocked": false,
+    "safe_to_publish": true,
+    "summary": "This is a legitimate EU MDR compliance toolkit containing templates and local Python scripts for medical device regulatory compliance. No network access or credential handling.",
+    "risk_factor_evidence": [
+      {
+        "factor": "filesystem",
+        "evidence": [
+          {
+            "file": "scripts/mdr-gap-analysis.py",
+            "line_start": 1,
+            "line_end": 100
+          }
+        ]
+      }
+    ],
+    "critical_findings": [],
+    "high_findings": [],
+    "medium_findings": [],
+    "low_findings": [],
+    "dangerous_patterns": [],
+    "files_scanned": 14,
+    "total_lines": 6000,
+    "audit_model": "claude",
+    "audited_at": "2026-05-26T07:53:54.993Z"
+  },
+  "content": {
+    "user_title": "MDR Regulatory Expert",
+    "value_statement": "Medical device companies need expert guidance for EU market compliance under MDR 2017/745. This skill provides comprehensive tools for classification decisions, technical file preparation, clinical evidence requirements, and post-market surveillance implementation.",
+    "seo_keywords": [
+      "MDR compliance",
+      "EU MDR 2017/745",
+      "medical device EU",
+      "technical documentation",
+      "clinical evidence",
+      "MDR classification",
+      "post-market surveillance",
+      "CE marking",
+      "Claude",
+      "Claude Code"
+    ],
+    "actual_capabilities": [
+      "Provides expert guidance on MDR classification under Annex VIII",
+      "Ensures comprehensive technical file preparation meeting Annex II and III requirements",
+      "Develops clinical evidence strategies including literature review and clinical investigations",
+      "Implements post-market surveillance systems meeting MDR Chapter VII requirements",
+      "Guides benefit-risk analysis and GSPR compliance",
+      "Supports UDI system implementation and EUDAMED registration",
+      "Manages economic operator obligations",
+      "Facilitates Notified Body interface and audit preparation"
+    ],
+    "limitations": [
+      "Does not replace formal Notified Body assessment",
+      "Cannot guarantee CE marking approval",
+      "Does not provide legal advice",
+      "Regulatory requirements evolve; users should verify latest MDR guidance"
+    ],
+    "use_cases": [
+      {
+        "target_user": "Medical device companies",
+        "title": "EU Market Entry",
+        "description": "Companies entering the EU medical device market for the first time"
+      },
+      {
+        "target_user": "Regulatory affairs teams",
+        "title": "MDR Transition",
+        "description": "Transitioning from MDD to MDR compliance"
+      },
+      {
+        "target_user": "Quality managers",
+        "title": "Technical Documentation",
+        "description": "Preparing comprehensive technical files for MDR submission"
+      },
+      {
+        "target_user": "Clinical teams",
+        "title": "Clinical Evidence",
+        "description": "Developing clinical evaluation and PMCF strategies"
+      }
+    ],
+    "prompt_templates": [
+      {
+        "title": "MDR Classification",
+        "scenario": "Determine device classification",
+        "prompt": "Help me determine the appropriate MDR classification for our medical device"
+      },
+      {
+        "title": "Technical File",
+        "scenario": "Prepare technical documentation",
+        "prompt": "Guide me through preparing a complete technical file for MDR compliance"
+      },
+      {
+        "title": "Clinical Evaluation",
+        "scenario": "Develop clinical evidence",
+        "prompt": "How do I develop a clinical evaluation strategy for MDR compliance?"
+      },
+      {
+        "title": "Post-Market Surveillance",
+        "scenario": "Establish PMS system",
+        "prompt": "Help me establish a post-market surveillance system for MDR compliance"
+      }
+    ],
+    "output_examples": [
+      {
+        "input": "What is the MDR classification for my device?",
+        "output": [
+          "MDR classification depends on: device duration (transient/short-term/permanent), invasiveness (non-invasive/invasive), body system affected, and specific rules in Annex VIII",
+          "Classes: I (low risk, self-certified), IIa (low-medium risk), IIb (medium-high risk), III (high risk, prior scrutiny)",
+          "Software classified per MDCG 2019-11 based on purpose and functioning"
+        ]
+      },
+      {
+        "input": "What is required for MDR technical documentation?",
+        "output": [
+          "MDR Technical File (Annex II) includes: Device description, Design and manufacturing information, GSPR checklist, Risk management, Clinical evaluation, PMCF plan, Labeling, Verification and validation",
+          "Must demonstrate compliance with General Safety and Performance Requirements (GSPR)",
+          "Updates required throughout device lifecycle"
+        ]
+      }
+    ],
+    "best_practices": [
+      "Start MDR compliance planning early in product development",
+      "Engage Notified Body early for complex classification questions",
+      "Maintain comprehensive technical documentation throughout device lifecycle",
+      "Implement robust PMS system from market entry",
+      "Keep clinical evaluation current with new data",
+      "Monitor MDCG guidance updates regularly"
+    ],
+    "anti_patterns": [
+      "Waiting until product launch to address MDR requirements",
+      "Copying technical files without understanding requirements",
+      "Failing to update clinical evaluation with new data",
+      "Neglecting PMS obligations after market entry",
+      "Underestimating UDI and EUDAMED requirements"
+    ],
+    "faq": [
+      {
+        "question": "What is the difference between MDD and MDR?",
+        "answer": "MDR (2017/745) has stricter requirements including: expanded device scope, stronger clinical evidence requirements, increased post-market surveillance, UDI requirements, and broader economic operator responsibilities."
+      },
+      {
+        "question": "What is the MDR transition timeline?",
+        "answer": "MDR became applicable May 26, 2021. Certificates under MDD remain valid until expiration or May 2024 (with extensions). Class I devices self-certified under MDD could register under MDR from May 2021."
+      },
+      {
+        "question": "What is GSPR?",
+        "answer": "General Safety and Performance Requirements - the essential requirements in Annex I that devices must meet to obtain CE marking under MDR."
+      },
+      {
+        "question": "What is PMCF?",
+        "answer": "Post-Market Clinical Follow-up - ongoing activities to proactively collect clinical data after device market entry to confirm safety and performance."
+      },
+      {
+        "question": "What is EUDAMED?",
+        "answer": "European Database on Medical Devices - electronic system for registration, coordination, and information sharing on medical devices in the EU."
+      },
+      {
+        "question": "Does this skill provide legal advice?",
+        "answer": "No. This tool provides regulatory guidance. Consult MDR-registered regulatory consultants or legal counsel for formal submissions."
+      }
+    ]
+  },
+  "file_structure": [
+    {
+      "name": "assets",
+      "type": "dir",
+      "path": "assets",
+      "children": [
+        {
+          "name": "templates",
+          "type": "dir",
+          "path": "assets/templates",
+          "children": [
+            {
+              "name": "mdr-classification-decision.md",
+              "type": "file",
+              "path": "assets/templates/mdr-classification-decision.md",
+              "lines": 80
+            },
+            {
+              "name": "technical-file-checklist.md",
+              "type": "file",
+              "path": "assets/templates/technical-file-checklist.md",
+              "lines": 100
+            },
+            {
+              "name": "clinical-evaluation-report.md",
+              "type": "file",
+              "path": "assets/templates/clinical-evaluation-report.md",
+              "lines": 120
+            },
+            {
+              "name": "pmcf-plan-template.md",
+              "type": "file",
+              "path": "assets/templates/pmcf-plan-template.md",
+              "lines": 90
+            },
+            {
+              "name": "psur-template.md",
+              "type": "file",
+              "path": "assets/templates/psur-template.md",
+              "lines": 70
+            },
+            {
+              "name": "gspr-checklist.md",
+              "type": "file",
+              "path": "assets/templates/gspr-checklist.md",
+              "lines": 110
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "path": "assets/templates/README.md",
+              "lines": 20
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "assets/README.md",
+          "lines": 20
+        }
+      ]
+    },
+    {
+      "name": "references",
+      "type": "dir",
+      "path": "references",
+      "children": [
+        {
+          "name": "mdr-classification-guide.md",
+          "type": "file",
+          "path": "references/mdr-classification-guide.md",
+          "lines": 200
+        },
+        {
+          "name": "technical-documentation-guide.md",
+          "type": "file",
+          "path": "references/technical-documentation-guide.md",
+          "lines": 250
+        },
+        {
+          "name": "clinical-evidence-requirements.md",
+          "type": "file",
+          "path": "references/clinical-evidence-requirements.md",
+          "lines": 180
+        },
+        {
+          "name": "gspr-guide.md",
+          "type": "file",
+          "path": "references/gspr-guide.md",
+          "lines": 220
+        },
+        {
+          "name": "post-market-surveillance-guide.md",
+          "type": "file",
+          "path": "references/post-market-surveillance-guide.md",
+          "lines": 160
+        },
+        {
+          "name": "eudamed-udi-guide.md",
+          "type": "file",
+          "path": "references/eudamed-udi-guide.md",
+          "lines": 140
+        },
+        {
+          "name": "mdcg-guidance-summary.md",
+          "type": "file",
+          "path": "references/mdcg-guidance-summary.md",
+          "lines": 130
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "references/README.md",
+          "lines": 20
+        }
+      ]
+    },
+    {
+      "name": "scripts",
+      "type": "dir",
+      "path": "scripts",
+      "children": [
+        {
+          "name": "mdr-gap-analysis.py",
+          "type": "file",
+          "path": "scripts/mdr-gap-analysis.py",
+          "lines": 180
+        },
+        {
+          "name": "clinical-evidence-tracker.py",
+          "type": "file",
+          "path": "scripts/clinical-evidence-tracker.py",
+          "lines": 150
+        },
+        {
+          "name": "udi-eudamed-compliance.py",
+          "type": "file",
+          "path": "scripts/udi-eudamed-compliance.py",
+          "lines": 130
+        },
+        {
+          "name": "pms-reporting-automation.py",
+          "type": "file",
+          "path": "scripts/pms-reporting-automation.py",
+          "lines": 140
+        }
+      ]
+    },
+    {
+      "name": "SKILL.md",
+      "type": "file",
+      "path": "SKILL.md",
+      "lines": 70
+    },
+    {
+      "name": "skill-report.json",
+      "type": "file",
+      "path": "skill-report.json",
+      "lines": 300
+    }
+  ]
+}

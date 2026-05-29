@@ -1,0 +1,22 @@
+# Example Asset File
+
+This placeholder represents where asset files would be stored.
+Replace with actual asset files (templates, images, fonts, etc.) or delete if not needed.
+
+Asset files are NOT intended to be loaded into context, but rather used within
+the output produced by the QMS Audit Expert.
+
+Example asset files:
+- Audit checklist templates
+- Report templates
+- Form templates
+- Process flow diagrams
+- Training materials
+
+## Common Asset Types
+
+- Templates: .md, .docx, .pptx, boilerplate directories
+- Images: .png, .jpg, .svg
+- Data: sample_data.csv, test_dataset.json
+
+Note: This is a text placeholder. Actual assets can be any file type.
